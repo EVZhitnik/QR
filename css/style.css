@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Outfit';
-    src: url('../fonts/Outfit-Regular.woff2') format('woff2');
+    src: url('./fonts/Outfit-Regular.woff2') format('woff2');
     font-weight: 400;
     font-size: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Outfit';
-    src: url('../fonts/Outfit-Bold.woff2') format('woff2');
+    src: url('./fonts/Outfit-Bold.woff2') format('woff2');
     font-weight: 700;
     font-size: normal;
     font-display: swap;
