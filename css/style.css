@@ -183,6 +183,9 @@ svg * {
     --container-width: 1440px;
     --container-padding-x: 16px;
 
+    --border-radius-1: 20px;
+    --border-radius-2: 10px;
+
     --transition-duration: 0.2s;
 }
 
@@ -210,4 +213,44 @@ body {
     clip-path: inset(100%) !important;
     clip: rect(0 0 0 0) !important;
     overflow: hidden !important;
+}
+/* --------------- QR --------------- */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qr__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    padding-top: 16px;
+    padding-inline: 16px;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-1);
+    max-width: 320px;
+}
+.qr__image {    
+    border-radius: var(--border-radius-2);
+    object-fit: cover;
+}
+.qr__text {
+    display: grid;
+    row-gap: 16px;
+    padding-bottom: 40px;
+}
+.qr__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color-slate-900);
+}
+.qr__description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--color-slate-500);
 }
